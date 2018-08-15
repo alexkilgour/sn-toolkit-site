@@ -1,0 +1,137 @@
+{
+  "packages": [
+    {
+      "name": "@springernature/acme-button",
+      "latest": "0.1.2",
+      "versions": [
+        "0.1.0",
+        "0.1.2"
+      ],
+      "status": "development",
+      "description": "a button",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Facme-button"
+    },
+    {
+      "name": "@springernature/eslint-config",
+      "latest": "2.0.0",
+      "versions": [
+        "0.1.0",
+        "1.0.0",
+        "2.0.0"
+      ],
+      "status": "production",
+      "description": "ESLint shareable config used at Springer Nature",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Feslint-config"
+    },
+    {
+      "name": "@springernature/global-box",
+      "latest": "2.0.0",
+      "versions": [
+        "1.0.1",
+        "2.0.0"
+      ],
+      "status": "production",
+      "description": "css box component",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-box"
+    },
+    {
+      "name": "@springernature/global-colors",
+      "latest": "0.0.1",
+      "versions": [
+        "0.0.1"
+      ],
+      "status": "experimental",
+      "description": "sass color variables",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-colors"
+    },
+    {
+      "name": "@springernature/global-css-base",
+      "latest": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "status": "development",
+      "description": "normalize and base styles",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-css-base"
+    },
+    {
+      "name": "@springernature/global-expandable-box",
+      "latest": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "status": "development",
+      "description": "height of box expands and contracts",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-expandable-box"
+    },
+    {
+      "name": "@springernature/global-grid",
+      "latest": "0.1.1",
+      "versions": [
+        "0.0.1",
+        "0.1.1"
+      ],
+      "status": "development",
+      "description": "css layout pattern",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-grid"
+    },
+    {
+      "name": "@springernature/global-mq",
+      "latest": "0.1.1",
+      "versions": [
+        "0.0.1",
+        "0.1.1"
+      ],
+      "status": "development",
+      "description": "css media-query pattern",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-mq"
+    },
+    {
+      "name": "@springernature/global-package-manager",
+      "latest": "2.3.0",
+      "versions": [
+        "0.0.1",
+        "0.0.2",
+        "0.0.3",
+        "0.0.4",
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.2.0",
+        "2.0.0",
+        "2.0.1",
+        "2.1.0",
+        "2.2.0",
+        "2.2.1",
+        "2.3.0"
+      ],
+      "status": "production",
+      "description": "handles the creation, validation, and publication of packages",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-package-manager"
+    },
+    {
+      "name": "@springernature/global-spacing",
+      "latest": "0.1.0",
+      "versions": [
+        "0.1.0"
+      ],
+      "status": "development",
+      "description": "Function that ensures spacing values exist in a predefined list",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fglobal-spacing"
+    },
+    {
+      "name": "@springernature/mathjax-config",
+      "latest": "0.1.9",
+      "versions": [
+        "0.1.4",
+        "0.1.5",
+        "0.1.6",
+        "0.1.7",
+        "0.1.9"
+      ],
+      "status": "development",
+      "description": "Shared configuration for MathJax across delivery platforms",
+      "npm": "https://www.npmjs.com/package/%40springernature%2Fmathjax-config"
+    }
+  ]
+}

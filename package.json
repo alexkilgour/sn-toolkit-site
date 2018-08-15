@@ -1,0 +1,27 @@
+{
+	"name": "sn-toolkit-site",
+	"description": "Feed from newsnow",
+	"version": "0.1.0",
+	"private": true,
+	"main": "index.js",
+	"homepage": "https://github.com/alexkilgour/sn-toolkit-site#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/alexkilgour/sn-toolkit-site.git"
+	},
+	"bugs": {
+		"url": "https://github.com/alexkilgour/sn-toolkit-site/issues"
+	},
+	"engines": {
+		"node": ">=8.0"
+	},
+	"dependencies": {
+		"ejs": "^2.5.8",
+		"koa": "^2.5.0",
+		"koa-http-request": "^2.2.1",
+		"koa-static": "^4.0.2",
+		"koa-views": "^6.1.4"
+	},
+	"devDependencies": {},
+	"scripts": {}
+}
