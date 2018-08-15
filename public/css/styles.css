@@ -71,25 +71,17 @@ td + td {
 
 .status {
 	display: inline-block;
-	text-indent: 100%;
     white-space: nowrap;
-    overflow: hidden;
-    direction: ltr;
-	vertical-align: bottom;
 	margin-top: 6px;
+	line-height: 1;
+	padding: 4px;
 }
 .status.production {
-	background: url(https://img.shields.io/badge/production-green.svg) no-repeat;
-	height: 20px;
-    width: 69px;
+	background-color: #00e676;
 }
 .status.development {
-	background: url(https://img.shields.io/badge/development-yellow.svg) no-repeat;
-	height: 20px;
-    width: 81px;
+	background-color: #ffc107;
 }
 .status.experimental {
-	background: url(https://img.shields.io/badge/experimental-red.svg) no-repeat;
-	height: 20px;
-    width: 83px;
+	background-color: #ef5350;
 }
