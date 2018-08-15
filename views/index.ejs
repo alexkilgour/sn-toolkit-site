@@ -7,13 +7,29 @@
 		<link rel="icon" href="./favicon.png" type="image/png" />
 	</head>
 	<body>
-		<ul>
-			<% for (let i = 0; i < packages.length; i++) { %>
-				<li>
-					<%- packages[i].name %>
-				</li>
-			<% } %>
-		</ul>
+		<div class="container">
+			<table class="striped">
+				<thead>
+					<tr>
+						<th colspan="2">Global Toolkit</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% for (let i = 0; i < packages.length; i++) { %>
+						<tr>
+							<td>
+								<a href="<%- packages[i].npm %>"><%- packages[i].name %></a><br>
+								<%- packages[i].description %>
+							</td>
+							<td>
+								<strong>v<%- packages[i].latest %></strong><br>
+								<span class="status <%- packages[i].status %>"><%- packages[i].status %></span>
+							</td>
+						</tr>
+					<% } %>
+				</tbody>
+			</table>
+		</div>
 		<script src="./js/app.js"></script>
 	</body>
 </html>

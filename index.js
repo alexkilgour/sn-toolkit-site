@@ -1,14 +1,25 @@
 'use strict';
 
 const path = require('path');
+const getPackages = require('get-scoped-packages').default;
 const views = require('koa-views');
 const serve = require('koa-static');
 const request = require('koa-http-request');
 const Koa = require('koa');
 const app = module.exports = new Koa();
 
+let data;
+
 // dummy data
-let data = require('./dummy.json');
+// data = require('./dummy.json');
+
+// grab the latest global package data
+getPackages({filters:['global', 'acme']})
+	.then(response => {
+		data = {
+			packages: response
+		};
+	});
 
 // app
 app.use(serve('public'));
