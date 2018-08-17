@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const getPackages = require('get-scoped-packages').default;
+const getPackages = require('get-scoped-packages');
 const views = require('koa-views');
 const serve = require('koa-static');
 const request = require('koa-http-request');
