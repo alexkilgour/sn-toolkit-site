@@ -16,8 +16,8 @@
 		"node": ">=8.0"
 	},
 	"dependencies": {
-    "ejs": "^2.5.8",
-    "get-scoped-packages": "^0.1.0",
+		"@springernature/util-package-finder": "^0.1.0",
+		"ejs": "^2.5.8",
 		"koa": "^2.5.0",
 		"koa-http-request": "^2.2.1",
 		"koa-static": "^4.0.2",

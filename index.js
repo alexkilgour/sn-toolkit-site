@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const getPackages = require('get-scoped-packages');
+const packageFinder = require('@springernature/util-package-finder');
 const views = require('koa-views');
 const serve = require('koa-static');
 const request = require('koa-http-request');
@@ -14,7 +14,7 @@ let data;
 // data = require('./dummy.json');
 
 // grab the latest global package data
-getPackages({filters:['global', 'acme']})
+packageFinder({filters:['global', 'acme']})
 	.then(response => {
 		data = {
 			packages: response
