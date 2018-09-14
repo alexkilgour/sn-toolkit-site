@@ -8,18 +8,23 @@
 	</head>
 	<body>
 		<div class="container">
+			<h1>Springer Nature NPM Packages</h1>
+			<p style="margin-bottom:5%;">Demonstration of the <a href="https://github.com/springernature/frontend-toolkit-utilities/tree/master/packages/util-package-finder">package finder</a> utility.</p>
 			<table class="striped">
-				<thead>
-					<tr>
-						<th colspan="2">Global Toolkit</th>
-					</tr>
-				</thead>
 				<tbody>
 					<% for (let i = 0; i < packages.length; i++) { %>
-						<tr>
+						<tr class="<%- packages[i].status %>">
 							<td>
-								<a href="<%- packages[i].npm %>"><%- packages[i].name %></a><br>
-								<%- packages[i].description %>
+								<h2><a href="<%- packages[i].npm %>"><%- packages[i].name %></a></h2>
+								<p><%- packages[i].description %></p>
+
+								<% if (packages[i].versions) { %>
+									<% if (packages[i].versions.length > 1) { %>
+										<small><strong><%- packages[i].versions.length %> versions:</strong> <%- packages[i].versions.toString().replace(/\,/g, ', '); %></small>
+									<% } else { %>
+										<small><strong><%- packages[i].versions.length %> version:</strong> <%- packages[i].versions.toString().replace(/\,/g, ', '); %></small>
+									<% } %>
+								<% } %>
 							</td>
 							<td>
 								<strong>v<%- packages[i].latest %></strong><br>

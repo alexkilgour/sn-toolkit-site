@@ -14,7 +14,10 @@ let data;
 // data = require('./dummy.json');
 
 // grab the latest global package data
-packageFinder({filters:['global', 'acme']})
+packageFinder({
+	deprecated: true,
+	versions: true
+})
 	.then(response => {
 		data = {
 			packages: response
@@ -33,4 +36,5 @@ app.use(async function (ctx) {
 if (!module.parent) {
 	app.listen(3000);
 	console.log('listening on port 3000');
+	console.log('http://localhost:3000/');
 }
