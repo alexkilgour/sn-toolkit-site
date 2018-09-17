@@ -10,9 +10,6 @@ const app = module.exports = new Koa();
 
 let data;
 
-// dummy data
-// data = require('./dummy.json');
-
 // grab the latest global package data
 packageFinder({
 	deprecated: true,
