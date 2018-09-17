@@ -19,7 +19,6 @@
 		"@springernature/util-package-finder": "^0.2.0",
 		"ejs": "^2.5.8",
 		"koa": "^2.5.0",
-		"koa-http-request": "^2.2.1",
 		"koa-static": "^4.0.2",
 		"koa-views": "^6.1.4"
 	},
