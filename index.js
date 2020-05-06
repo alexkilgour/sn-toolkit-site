@@ -12,7 +12,7 @@ app.use(views(path.join(__dirname, '/views'), { extension: 'ejs' }));
 
 // grab the latest package data & render
 app.use(async function (ctx) {
-	const response = await packageFinder({deprecated: true, versions: true})
+	const response = await packageFinder({versions: true})
 	await ctx.render('index', {packages: response});
 });
 
